@@ -2,7 +2,7 @@
 
 Zhihao Yuan, Jinke Ren, Chun-Mei Feng, Hengshuang Zhao, Shuguang Cui, Zhen Li
 
-![teaser](docs/static/images/figure_1.png)
+<img src="docs/static/images/figure_1.png" width="50%">
 
 *Comparative overview of two 3DVG approaches.*
 (a) Supervised 3DVG involves input from 3D scans combined with text queries,
