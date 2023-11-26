@@ -2,22 +2,284 @@
 <html>
 
 <head>
-    <title>My Project</title>
-    <!-- Add additional meta tags and CSS files here -->
+    <meta charset="utf-8">
+    <meta name="description" content="3D Semantic Instance Segmentation with Open-Vocabulary queries">
+    <meta name="keywords" content="OpenMask3D, Instance Segmentation, 3D Scene Understanding">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ZSVG3D 🛋</title>
+    <link rel="icon" type="image/x-icon" href="img/icon.png">
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-PYVRSFMDRL');
+    </script>
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="icon" href="./static/images/favicon.svg">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
 </head>
 
 <body>
-    <header>
-        <h1>Welcome to My Project</h1>
-    </header>
-    <section>
-        <p>This is a basic example of an index.html file for a GitHub project page.</p>
-        <p>Here, you can add details about your project, such as its purpose, how to install it, how to use it, and so
-            on.</p>
+
+
+
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <h1 class="title is-1 publication-title">
+                            <p class="title is-3 publication-title">Visual Programming for Zero-shot Open-Vocabulary 3D
+                                Visual Grounding 🛋</p>
+                        </h1>
+
+                        <!-- <h1 class="title is-4" style="color: #5c5c5c;">NeurIPS 2023</h1> -->
+
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block">
+                                <a>Zhihao Yuan</a><sup>1,2</sup>,</span>
+                            <span class="author-block">
+                                <a>Jinke Ren</a><sup>1,2</sup>,
+                            </span>
+                            <br />
+                            <span class="author-block">
+                                <a>Chun-Mei
+                                    Feng</a><sup>3</sup>,
+                            </span>
+                            <span class="author-block">
+                                <a href="https://hszhao.github.io/">Hengshuang Zhao</a><sup>4</sup>,
+                            </span>
+                            <span class="author-block">
+                                <a href="https://sse.cuhk.edu.cn/faculty/cuishuguang">Shuguang Cui</a><sup>2,1</sup>,
+                            </span>
+                            <span class="author-block">
+                                <a href="https://mypage.cuhk.edu.cn/academics/lizhen/">Zhen Li</a><sup>2,1</sup>
+                            </span>
+                        </div>
+
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block" style="margin-right: 1em;"><sup>1</sup>The Future Network of
+                                Intelligence Institute, The Chinese University of Hong Kong (Shenzhen)</span>
+                            <span class="author-block" style="margin-right: 1em;"><sup>2</sup>School of Science and
+                                Engineering, The Chinese University of Hong Kong (Shenzhen)</span>
+                            <span class="author-block" style="margin-right: 1em;"><sup>3</sup>IHPC, A*STAR,
+                                Singapore</span></br>
+                            <span class="author-block" style="margin-right: 1em;"><sup>4</sup>The University of Hong
+                                Kong</span></br>
+                            <!-- <span class="author-block" style="margin-right: 1em; font-size: 18px;"><sup>*</sup>Equal
+                                contribution</span> -->
+                        </div>
+
+                        <div class="column has-text-centered">
+                            <div class="publication-links">
+                                <!-- PDF Link. -->
+                                <!-- <span class="link-block">
+                                    <a href="static/pdf/openmask3d.pdf"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fas fa-file-pdf"></i>
+                                        </span>
+                                        <span>Paper</span>
+                                    </a>
+                                </span> -->
+                                <span class="link-block">
+                                    <a href="#" class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="ai ai-arxiv"></i>
+                                        </span>
+                                        <span>arXiv</span>
+                                    </a>
+                                </span>
+                                <!-- Code Link. -->
+                                <span class="link-block">
+                                    <a href="https://github.com/CurryYuan/ZSVG3D"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-github"></i>
+                                        </span>
+                                        <span>Code</span>
+                                    </a>
+                                </span>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <footer>
-        <p>Check out the project on <a href="https://github.com/yourusername/yourprojectname">GitHub</a>.</p>
+
+
+    <section class="hero teaser">
+        <div class="container is-max-desktop">
+            <div class="hero-body">
+                <img src="static/images/figure_1.png"
+                    style="display: block; margin-left: auto; margin-right: auto; width: 60%;" />
+
+                <br><br>
+                <h2 class="subtitle has-text-centered">
+                    Comparative overview of two 3DVG approaches.
+                </h2>
+                <p>
+                    (a) Supervised 3DVG involves input from 3D scans combined with text queries,
+                    guided by
+                    object-text pair annotations, (b) Zero-shot 3DVG identifies the location of target
+                    objects using
+                    programmatic representation generated by LLMs, i.e., target category, anchor
+                    category, and
+                    relation grounding, thereby highlighting its superiority in decoding spatial relations and
+                    object identifiers
+                    within a given space, e.g., the location of the keyboard (outlined in green) can be
+                    retrieved based on
+                    the distance between the keyboard and the door (outlined in blue).
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section">
+        <div class="container is-max-desktop">
+            <!-- Abstract. -->
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Abstract</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            3D Visual Grounding (3DVG) aims at localizing 3D object based on textual descriptions.
+                            Conventional supervised methods
+                            for 3DVG often necessitate extensive annotations and a predefined vocabulary, which can be
+                            restrictive. To address this
+                            issue, we propose a novel visual programming approach for zero-shot open-vocabulary 3DVG,
+                            leveraging the capabilities of
+                            large language models (LLMs). Our approach begins with a unique dialog-based method,
+                            engaging with LLMs to establish a
+                            foundational understanding of zero-shot 3DVG. Building on this, we design a visual program
+                            that consists of three types
+                            of modules, i.e., view-independent, view-dependent, and functional modules. Furthermore, we
+                            develop an innovative
+                            language-object correlation module to extend the scope of existing 3D object detectors into
+                            open-vocabulary scenarios.
+                            Extensive experiments demonstrate that our zero-shot approach can outperform some supervised
+                            baselines, marking a
+                            significant stride towards effective 3DVG.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--/ Abstract. -->
+
+            <!-- Paper video. -->
+            <!-- <div class="columns is-centered has-text-centered">
+                <div class="column is-full-width">
+                    <h2 class="title is-3">Explanatory Video</h2>
+                    <video controls poster="static/images/explanatory_video_poster.jpeg">
+                        <source src="static/videos/poster_session.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div> -->
+    </section>
+
+    <section class="section">
+        <div class="container is-max-desktop">
+
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-full-width">
+
+                    <h2 class="title is-3">Method</h2>
+
+                    <br>
+                    <div class="hero-body">
+                        <img src="static/images/figure_2.png"
+                            style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
+
+                        <br><br>
+                        <h2 class="subtitle has-text-centered">
+                            Overview of two zero-shot approaches for 3DVG.
+                        </h2>
+                        <p>
+                            (a) shows the working mechanism of the
+                            vanilla dialog
+                            with LLM approach. First, we describe the 3DVG task and provide the text descriptions of the
+                            room. Then, LLMs identify
+                            the objects relevant to the query sentence and perform human-like reasoning.
+                        </p>
+
+                        <p>
+                            (b) presents
+                            the 3D visual
+                            programming approach. We first input in-context examples into LLMs. Then, LLMs generate 3D
+                            visual programs through the
+                            grounding descriptions and perform human-like reasoning. Next, these programs are
+                            transformed into executable Python
+                            codes via the LOC module for predicting the location of the object. For example, the upper
+                            example uses the
+                            view-independent module, i.e., CLOSEST to determine the proximity in 3D space, while the
+                            lower example applies the
+                            view-dependent module, i.e., RIGHT to establish the relative positioning.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- <h2 class="title is-3">BibTeX</h2>
+            <pre><code>
+                        @inproceedings{takmaz2023openmask3d,
+                        title={{OpenMask3D: Open-Vocabulary 3D Instance Segmentation}},
+                        author={Takmaz, Ay{\c{c}}a and Fedele, Elisabetta and Sumner, Robert W. and Pollefeys, Marc and Tombari, Federico and Engelmann, Francis},
+                        booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+                        year={2023}
+                        }</code></pre> -->
+
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-8">
+                    <div class="content">
+                        <p>
+                            This website is licensed under a <a rel="license"
+                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                                Commons Attribution-ShareAlike 4.0 International License</a>.
+                        </p>
+                        <p>
+                            It borrows the source code of <a href="https://github.com/nerfies/nerfies.github.io">this
+                                website</a>.
+                            We would like to thank Utkarsh Sinha and Keunhong Park.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
+
 </body>
 
 </html>
