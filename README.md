@@ -2,7 +2,20 @@
 
 Zhihao Yuan, Jinke Ren, Chun-Mei Feng, Hengshuang Zhao, Shuguang Cui, Zhen Li
 
-<img src="docs/static/images/figure_1.png" width="75%">
+<p align="center">
+    <a href='https://arxiv.org/abs/2311.15383'>
+      <img src='https://img.shields.io/badge/Paper-PDF-red?style=flat&logo=arXiv&logoColor=red' alt='Paper PDF'>
+    </a>
+    <a href='https://curryyuan.github.io/ZSVG3D/' style='padding-left: 0.5rem;'>
+      <img src='https://img.shields.io/badge/Project-Page-blue?style=flat&logo=Google%20chrome&logoColor=blue' alt='Project Page'>
+    </a>
+  </p>
+
+<!-- <img src="docs/static/images/figure_1.png" width="75%"> -->
+
+  <p align="center">
+    <img src="docs/static/images/figure_1.png" alt="Logo" width="80%">
+  </p>
 
 *Comparative overview of two 3DVG approaches.*
 (a) Supervised 3DVG involves input from 3D scans combined with text queries,
