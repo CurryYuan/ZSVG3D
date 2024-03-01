@@ -1,6 +1,13 @@
-# Visual Programming for Zero-shot Open-Vocabulary 3D Visual Grounding
 
-Zhihao Yuan, Jinke Ren, Chun-Mei Feng, Hengshuang Zhao, Shuguang Cui, Zhen Li
+<p align="center">
+  <h1 align="center">Visual Programming for Zero-shot Open-Vocabulary 3D Visual Grounding</h1>
+
+  <p align="center">
+    Zhihao Yuan, Jinke Ren, Chun-Mei Feng, Hengshuang Zhao, Shuguang Cui, Zhen Li
+  </p>
+
+  <h2 align="center">CVPR 2024</h2>
+
 
 <p align="center">
     <a href='https://arxiv.org/abs/2311.15383'>
@@ -10,6 +17,11 @@ Zhihao Yuan, Jinke Ren, Chun-Mei Feng, Hengshuang Zhao, Shuguang Cui, Zhen Li
       <img src='https://img.shields.io/badge/Project-Page-blue?style=flat&logo=Google%20chrome&logoColor=blue' alt='Project Page'>
     </a>
   </p>
+
+</p>
+
+
+
 
 <!-- <img src="docs/static/images/figure_1.png" width="75%"> -->
 
