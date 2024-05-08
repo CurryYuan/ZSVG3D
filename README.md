@@ -43,46 +43,33 @@ retrieved based on
 the distance between the keyboard and the door (outlined in blue).
 
 
-## Abstract
-<p>
-    3D Visual Grounding (3DVG) aims at localizing 3D object based on textual descriptions.
-    Conventional supervised methods
-    for 3DVG often necessitate extensive annotations and a predefined vocabulary, which can be
-    restrictive. To address this
-    issue, we propose a novel visual programming approach for zero-shot open-vocabulary 3DVG,
-    leveraging the capabilities of
-    large language models (LLMs). Our approach begins with a unique dialog-based method,
-    engaging with LLMs to establish a
-    foundational understanding of zero-shot 3DVG. Building on this, we design a visual program
-    that consists of three types
-    of modules, i.e., view-independent, view-dependent, and functional modules. Furthermore, we
-    develop an innovative
-    language-object correlation module to extend the scope of existing 3D object detectors into
-    open-vocabulary scenarios.
-    Extensive experiments demonstrate that our zero-shot approach can outperform some supervised
-    baselines, marking a
-    significant stride towards effective 3DVG.
-</p>
+## Instructions
 
-## Method
+### Zero-shot evaluation
+Download our preproceed 3D and 2D featrues from [here](https://cuhko365-my.sharepoint.com/:f:/g/personal/221019046_link_cuhk_edu_cn/Ev4ruFI2DW5FoqVdiPtpd4gBZALQi20oT7otg1zA-GOKRA?e=xkMf8T) and place them under `data/scannet` folder.
 
-![teaser](docs/static/images/figure_2.png)
+Run the following command:
+```python
+python visprog_nr3d.py
+```
 
-*Overview of two zero-shot approaches for 3DVG.*
-(a) shows the working mechanism of the
-vanilla dialog
-with LLM approach. First, we describe the 3DVG task and provide the text descriptions of the
-room. Then, LLMs identify
-the objects relevant to the query sentence and perform human-like reasoning.
-(b) presents
-the 3D visual
-programming approach. We first input in-context examples into LLMs. Then, LLMs generate 3D
-visual programs through the
-grounding descriptions and perform human-like reasoning. Next, these programs are
-transformed into executable Python
-codes via the LOC module for predicting the location of the object. For example, the upper
-example uses the
-view-independent module, i.e., CLOSEST to determine the proximity in 3D space, while the
-lower example applies the
-view-dependent module, i.e., RIGHT to establish the relative positioning.
 
+### Data Preparation
+
+You can also process the features by yourself.
+
+First, install the dependencies: 
+```bash
+cd ./models/pointnext/PointNeXt
+bash install.sh
+```
+
+Prepare ScanNet 2D data following [OpenScene](https://github.com/pengsongyou/openscene/blob/main/scripts/preprocess/README.md) and 3D data following [vil3dref](https://github.com/cshizhe/vil3dref).
+
+<!-- Download our pretrained classifier from [here](https://drive.google.com/file/d/1Q6Q6) which is fine-tuned from [ULIP](https://github.com/salesforce/ULIP), and place it under `weights` folder. -->
+
+Then, run the following scripts:
+```python
+python preprocess/process_feat_3d.py
+python preprocess/process_feat_2d.py
+```
