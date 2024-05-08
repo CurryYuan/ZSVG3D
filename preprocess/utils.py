@@ -81,7 +81,7 @@ def load_pc(scan_id, keep_background = False, scan_dir = '/221019046/Projects/vi
     return batch_labels, obj_ids, inst_locs, center, batch_pcds
 
 
-def load_pred_ins(scan_id, normalize=True, use_scannet200=False):
+def load_pred_ins(scan_id, normalize=True, use_scannet200=True):
     root_dir = '/221019046/Data/Mask3d/scannet'
     if use_scannet200:
         root_dir = '/221019046/Data/Mask3d/scannet200'
