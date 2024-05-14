@@ -73,3 +73,5 @@ Then, run the following scripts:
 python preprocess/process_feat_3d.py
 python preprocess/process_feat_2d.py
 ```
+
+You can refer to `preprocess/process_mask3d.ipynb` for processing 3D instance segments.

@@ -81,10 +81,8 @@ def load_pc(scan_id, keep_background = False, scan_dir = '/221019046/Projects/vi
     return batch_labels, obj_ids, inst_locs, center, batch_pcds
 
 
-def load_pred_ins(scan_id, normalize=True, use_scannet200=True):
-    root_dir = '/221019046/Data/Mask3d/scannet'
-    if use_scannet200:
-        root_dir = '/221019046/Data/Mask3d/scannet200'
+def load_pred_ins(root_dir, scan_id, normalize=True):
+
     data = np.load(os.path.join(root_dir, scan_id + '.npz'), allow_pickle=True)
     batch_labels = data['ins_labels']
 

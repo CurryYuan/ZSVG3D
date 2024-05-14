@@ -8,9 +8,8 @@ import torch
 import os, sys
 
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
-from preprocess.utils import get_train_val_split
+from preprocess.utils import get_train_val_split, load_pc
 from models.pcd_classifier import PcdClassifier
-from preprocess.utils import load_pc
 
 
 
@@ -33,13 +32,15 @@ if __name__ == '__main__':
 
     data = {}
 
-    for scene_id in tqdm(scene_ids):
-        batch_labels, obj_ids, inst_locs, center, batch_pcds = load_pc(scene_id)
+    for scan_id in tqdm(scene_ids):
+        batch_labels, obj_ids, inst_locs, center, batch_pcds = load_pc(scan_id)
+
+        obj_ids = list(range(len(batch_labels)))
 
         obj_embeds = model(batch_pcds[..., :4].cuda())     # (B, D)
-        obj_embeds = obj_embeds / obj_embeds.norm(p=2, dim=-1, keepdim=True)
+        obj_embeds = torch.nn.functional.normalize(obj_embeds, p=2, dim=-1)
 
-        data[scene_id] = {
+        data[scan_id] = {
             'batch_labels': batch_labels,
             'obj_ids': obj_ids,
             'inst_locs': inst_locs,
@@ -47,8 +48,8 @@ if __name__ == '__main__':
             'obj_embeds': obj_embeds.detach().cpu()
         }
 
-        # break
+        break
 
     # save in pickle
-    with open('data/scannet/feats_3d.pkl', 'wb') as f:
-        pickle.dump(data, f)
+    # with open('data/scannet/feats_3d.pkl', 'wb') as f:
+    #     pickle.dump(data, f)
