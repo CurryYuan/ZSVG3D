@@ -48,8 +48,8 @@ if __name__ == '__main__':
             'obj_embeds': obj_embeds.detach().cpu()
         }
 
-        break
+        # break
 
     # save in pickle
-    # with open('data/scannet/feats_3d.pkl', 'wb') as f:
-    #     pickle.dump(data, f)
+    with open('data/scannet/feats_3d.pkl', 'wb') as f:
+        pickle.dump(data, f)
