@@ -248,10 +248,18 @@ def process_scan(scene_id, root_path, image_root, point2img_mapper, processor, c
         idx = np.argsort(area)[-k:]
         img_list = [imgs[obj_id][i] for i in idx]
 
-        inputs = processor(images=[img[0] for img in img_list], return_tensors="pt", padding=True)
-        inputs['pixel_values'] = inputs['pixel_values'].cuda()
-        img_feat = clip.get_image_features(**inputs)
-        img_feats[str(obj_id)] = img_feat.detach().cpu()
+        save_path = os.path.join(root_path, '2d_bbox', scene_id, str(obj_id))
+        # print('save to', save_path)
+        os.makedirs(save_path, exist_ok=True)
+
+        for (crop_img, mask_img, image_name) in img_list:
+
+            cv2.imwrite(os.path.join(save_path, 'img_' + image_name), crop_img)
+
+        # inputs = processor(images=[img[0] for img in img_list], return_tensors="pt", padding=True)
+        # inputs['pixel_values'] = inputs['pixel_values'].cuda()
+        # img_feat = clip.get_image_features(**inputs)
+        # img_feats[str(obj_id)] = img_feat.detach().cpu()
 
     return img_feats
 
@@ -264,7 +272,7 @@ def process_scan_pred(scene_id, root_path, image_root, point2img_mapper, process
     # print('Number of images: {}.'.format(len(image_list)))
 
     # load point cloud
-    root_dir = '/221019046/Data/Mask3d/scannet200_unalign'
+    root_dir = '/221019046/Data/Mask3d/scannet200'
     data = np.load(os.path.join(root_dir, scene_id + '.npz'), allow_pickle=True)
     batch_labels = data['ins_labels']
 

@@ -16,8 +16,8 @@ from zsvg.program import parse_step
 with open('data/scannet/feats_3d.pkl', 'rb') as f:
     feats = pickle.load(f)
 
-with open('data/scannet/feats_2d.pkl', 'rb') as f:
-    feats_2d = pickle.load(f)
+# with open('data/scannet/feats_2d.pkl', 'rb') as f:
+#     feats_2d = pickle.load(f)
 
 
 def load_pc(scan_id):
@@ -51,8 +51,6 @@ class LocInterpreter(nn.Module):
 
         label_lang_infos = self.clip.get_text_features(**self.class_name_tokens)
         self.label_lang_infos = label_lang_infos / label_lang_infos.norm(p=2, dim=-1, keepdim=True)
-
-        self.root_path = '/LiZhen_team/dataset/scannet/'
 
 
     def execute(self, prog_step, inspect=False):
@@ -113,7 +111,7 @@ class LocInterpreter(nn.Module):
         return boxes
 
 
-@register_interpreter
+# @register_interpreter
 class BLIPInterpreter(nn.Module):
     step_name = 'LOC'
 
@@ -143,7 +141,7 @@ class BLIPInterpreter(nn.Module):
         label_lang_infos = self.clip.get_text_features(**self.class_name_tokens)
         self.label_lang_infos = label_lang_infos / label_lang_infos.norm(p=2, dim=-1, keepdim=True)
 
-        self.root_path = '/LiZhen_team/dataset/scannet/'
+        self.image_path = '/LiZhen_team/dataset/scannet/'
 
 
     def execute(self, prog_step, inspect=False):
@@ -202,7 +200,7 @@ class BLIPInterpreter(nn.Module):
             if pred_class_list[i] == text_cls:
                 obj_id = obj_ids[i]
 
-                img_file = glob.glob(os.path.join(self.root_path, '2d_bbox', scan_id, str(obj_id), 'img_*.jpg'))
+                img_file = glob.glob(os.path.join(self.image_path, '2d_bbox', scan_id, str(obj_id), 'img_*.jpg'))
 
                 imgs = []
                 for image in img_file:

@@ -46,12 +46,15 @@ the distance between the keyboard and the door (outlined in blue).
 ## Instructions
 
 ### Zero-shot evaluation
-Download our preproceed 3D and 2D featrues from [here](https://cuhko365-my.sharepoint.com/:f:/g/personal/221019046_link_cuhk_edu_cn/Ev4ruFI2DW5FoqVdiPtpd4gBZALQi20oT7otg1zA-GOKRA?e=xkMf8T) and place them under `data/scannet` folder.
+Download our preproceed 3D features from [here](https://cuhko365-my.sharepoint.com/:u:/g/personal/221019046_link_cuhk_edu_cn/ERMP88uTVCNLhzofKub7MsMBvaRAFXVr5abbQUjRYyYDiA?e=x6aKC9) and place them under `data/scannet` folder.
 
 Run the following command:
 ```python
 python visprog_nr3d.py
 ```
+
+Uncomment this line to use the BLIP2 models for LOC module. You can download our preprocessed images from [here](https://cuhko365-my.sharepoint.com/:u:/g/personal/221019046_link_cuhk_edu_cn/Ed4HCYSQh5xDgmaCM4PatOsBWHpri34gHXePO2VwUKJWfw?e=XTYz8Z) and change the image_path to your downloaded path.
+
 
 
 ### Data Preparation
