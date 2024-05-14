@@ -53,7 +53,7 @@ Run the following command:
 python visprog_nr3d.py
 ```
 
-Uncomment this line to use the BLIP2 models for LOC module. You can download our preprocessed images from [here](https://cuhko365-my.sharepoint.com/:u:/g/personal/221019046_link_cuhk_edu_cn/Ed4HCYSQh5xDgmaCM4PatOsBWHpri34gHXePO2VwUKJWfw?e=XTYz8Z) and change the image_path to your downloaded path.
+Uncomment this line to use the BLIP2 models for LOC module. You can download our preprocessed images from [here](https://cuhko365-my.sharepoint.com/:u:/g/personal/221019046_link_cuhk_edu_cn/Ed4HCYSQh5xDgmaCM4PatOsBWHpri34gHXePO2VwUKJWfw?e=XTYz8Z) and change the [image_path](https://github.com/CurryYuan/ZSVG3D/blob/11c67346215bbda1c01a136bb75403667eac13e2/zsvg/loc_interpreters.py#L114) to your downloaded path.
 
 
 
