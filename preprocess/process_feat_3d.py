@@ -33,9 +33,9 @@ if __name__ == '__main__':
     data = {}
 
     for scan_id in tqdm(scene_ids):
-        batch_labels, obj_ids, inst_locs, center, batch_pcds = load_pc(scan_id)
+        batch_labels, obj_ids, inst_locs, center, batch_pcds = load_pc(scan_id, keep_background=False)
 
-        obj_ids = list(range(len(batch_labels)))
+        # obj_ids = list(range(len(batch_labels)))
 
         obj_embeds = model(batch_pcds[..., :4].cuda())     # (B, D)
         obj_embeds = torch.nn.functional.normalize(obj_embeds, p=2, dim=-1)

@@ -76,7 +76,7 @@ class LocInterpreter(nn.Module):
         logit_scale = self.clip.logit_scale.exp()
 
         # cosine similarity as logits
-        class_logits_3d = torch.matmul(self.label_lang_infos, obj_embeds.t())     # * logit_scale
+        class_logits_3d = torch.matmul(self.label_lang_infos, obj_embeds.t().cuda())     # * logit_scale
         obj_cls = class_logits_3d.argmax(dim=0)
         pred_class_list = [self.class_name_list[idx] for idx in obj_cls]
 
