@@ -45,6 +45,12 @@ the distance between the keyboard and the door (outlined in blue).
 
 ## Instructions
 
+### Visual Programming Generation
+Run the following command. You need to modify the OpenAI key first.
+```python
+python gen_visprog.py
+```
+
 ### Zero-shot evaluation
 Download our preproceed 3D features from [here](https://cuhko365-my.sharepoint.com/:u:/g/personal/221019046_link_cuhk_edu_cn/ERMP88uTVCNLhzofKub7MsMBvaRAFXVr5abbQUjRYyYDiA?e=x6aKC9) and place them under `data/scannet` folder.
 

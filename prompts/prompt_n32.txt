@@ -1,0 +1,277 @@
+Your task is to parse the description to program, thus the program can be excuted to the target object.
+
+Here are the functions and variables you can use to parse the description to program:
+
+```
+# Function Definitions
+def LOC(object):
+    # Implement the LOC function to locate the object in the room
+    # Return the objects of query text
+
+def LEFT(targets, anchors):
+    # Implement the LEFT function to find the target object to the left of the anchor object
+    # Return the target object to the left of the anchor object
+
+def RIGHT(targets, anchors):
+    # Implement the RIGHT function to find the target object to the right of the anchor object
+    # Return the target object to the right of the anchor object
+
+def LOWER(targets, anchors):
+    # Implement the LOWER function to find the target object below the anchor object
+    # Return the target object lower than the anchor object
+
+def HIGHER(targets, anchors):
+    # Implement the HIGHER function to find the target object above the anchor object
+    # Return the target object higher than the anchor object
+
+def CALC_DIST(target1, target2):
+    # Implement the CALC_DIST function to calculate the distance between two target objects
+    # Return the distance between the target objects
+
+def CALC_SIZE(target):
+    # Implement the CALC_SIZE function to calculate the size of the target object
+    # Return the size of the target object
+
+def LOWEST(targets):
+    # Implement the LOWEST function to find the lowest target object
+    # Return the lowest target object
+
+def HIGHEST(targets):
+    # Implement the HIGHEST function to find the highest target object
+    # Return the highest target object
+
+def CLOSEST(targets, anchors):
+    # Implement the CLOSEST function to find the target object closest/near/next to the anchor object
+    # Return the closest target object
+
+def BETWEEN(targets, anchors):
+    # Implement the BETWEEN function to find the target object located between two anchor objects
+    # Return the target object located between the anchor objects
+
+def MIN(values):
+    # Implement the MIN function to find the minimum value in a list of values
+    # Return the object with minimum value
+
+def MAX(values):
+    # Implement the MAX function to find the maximum value in a list of values
+    # Return the object with maximum value
+
+def MID(targets):
+    # Implement the MID function to find the target object in the middle of a list of target objects
+    # Return the target object in the middle
+
+def FARTHEST(targets, anchors):
+    # Implement the FARTHEST function to find the target object farthest from the anchor object
+    # Return the farthest target object
+
+variable CENTER  # Implement the CENTER variable to represent the center of the room
+```
+
+Here are some examples of the description and the corresponding program:
+
+```
+[0] Description: the handicapped stall
+[1] Description: the blue bag in the closet
+[2] Description: end table with flowers on it
+[3] Description: the top white box on the floor
+[4] Description: the stool in between the two beds
+[5] Description: the smallest dark cabinet
+[6] Description: there is a tv on top of this dresser
+[7] Description: face the fridge and then move to the trash can on the ground in the left corner
+[8] Description: the picture above the bed
+[9] Description: facing the wall with two pictures the picture on the right
+[10] Description: the printer right next to the door
+[11] Description: if you are facing the three windows on one wall it is the window on the left
+[12] Description: the two trash cans between the doors the one on the left
+[13] Description: this is the taller cabinet which extends to the floor
+[14] Description: the correct table is in the middle of the room
+[15] Description: it is the window in the middle of the room above the chairs
+[16] Description: staring at the cabinets you want the window on the right side near the picture hanging on the wall
+[17] Description: the target towel is the middle one to the left of the sink
+[18] Description: it is the oven below the other oven
+[19] Description: the tall bookshelf is on the smaller wall
+[20] Description: choose the smaller bookshelf that is close to the chair with a blue backpack
+[21] Description: if the clock is on the right wall this sofa chair is farthest to the left
+[22] Description: the thin wooden table underneath the television and immediately to the left of the trash can
+[23] Description: the table at the end of the seats with a square red stool to its right
+[24] Description: the bottle on the lower shelf of the shower
+[25] Description: the white cup closest to the edge of the counter next to the refrigerator
+[26] Description: the file cabinet is tucked under a desk in a cubicle
+[27] Description: the box in the corner of the room
+[28] Description: whiteboard with four chairs and desk in front of it
+[29] Description: bottle on the floor behind the toilet
+[30] Description: the shelf that does not have a bright yellow thing next to it
+[31] Description: the couch that is not next to the round coffee table with the in it
+
+
+[0] Program:
+BOX0=LOC(object='handicapped stall')
+
+[1] Program:
+BOX0=LOC(object='blue bag')
+BOX1=LOC(object='closet')
+TARGET=CLOSEST(targets=BOX0, anchors=BOX1)
+
+[2] Program:
+BOX0=LOC(object='end table')
+BOX1=LOC(object='flowers')
+TARGET=CLOSEST(targets=BOX0, anchors=BOX1)
+
+[3] Program:
+BOX0=LOC(object='white box')
+TARGET=HIGHEST(targets=BOX0)
+
+[4] Program:
+BOX0=LOC(object='stool')
+BOX1=LOC(object='beds')
+TARGET=BETWEEN(targets=BOX0, anchors=BOX1)
+
+[5] Program:
+BOX0=LOC(object='dark cabinet')
+SIZES=CALC_SIZE(targets=BOX0)
+TARGET=MIN(data=SIZES)
+
+[6] Program:
+BOX0=LOC(object='dresser')
+BOX1=LOC(object='tv')
+TARGET=LOWER(targets=BOX0, anchors=BOX1)
+
+[7] Program:
+BOX0=LOC(object='trash can')
+BOX1=LOC(object='fridge')
+TARGET=LEFT(targets=BOX0, anchors=BOX1)
+
+[8] Program:
+BOX0=LOC(object='picture')
+BOX1=LOC(object='bed')
+BOX2=HIGHER(targets=BOX0, anchors=BOX1)
+TARGET=HIGHEST(targets=BOX2)
+
+[9] Program:
+BOX0=LOC(object='picture')
+TARGET=RIGHT(targets=BOX0)
+
+[10] Program:
+BOX0=LOC(object='printer')
+BOX1=LOC(object='door')
+TARGET=CLOSEST(targets=BOX0, anchors=BOX1)
+
+[11] Program:
+BOX0=LOC(object='window')
+BOX2=LEFT(targets=BOX0)
+
+[12] Program:
+BOX0=LOC(object='trash can')
+BOX1=LOC(object='doors')
+BOX2=LEFT(targets=BOX0, anchors=BOX1)
+
+[13] Program:
+BOX0=LOC(object='cabinet')
+TARGET=HIGHEST(targets=BOX0)
+
+[14] Program:
+BOX0=LOC(object='table')
+TARGET=CLOSEST(targets=BOX0, anchors=CENTER)
+
+[15] Program:
+BOX0=LOC(object='window')
+BOX1=LOC(object='chairs')
+BOX2=HIGHER(targets=BOX0, anchors=BOX1)
+TARGET=CLOSEST(targets=BOX2, anchors=CENTER)
+
+[16] Program:
+BOX0=LOC(object='window')
+BOX1=LOC(object='cabinet')
+BOX2=RIGHT(targets=BOX0, anchors=BOX1)
+
+[17] Program:
+BOX0=LOC(object='towel')
+BOX1=LOC(object='sink')
+BOX2=LEFT(targets=BOX0, anchors=BOX1)
+TARGET=MID(targets=BOX2)
+
+[18] Program:
+BOX0=LOC(object='oven')
+TARGET=LOWEST(targets=BOX0)
+
+[19] Program:
+BOX0=LOC(object='bookshelf')
+SIZES=CALC_SIZE(targets=BOX0)
+TARGET=MAX(data=SIZES)
+
+[20] Program:
+BOX0=LOC(object='bookshelf')
+SIZES=CALC_SIZE(targets=BOX0)
+TARGET=MIN(data=SIZES)
+
+[21] Program:
+BOX0=LOC(object='sofa chair')
+BOX1=LOC(object='clock')
+BOX2=LEFT(targets=BOX0, anchors=BOX1)
+
+[22] Program:
+BOX0=LOC(object='thin wooden table')
+BOX1=LOC(object='tv')
+BOX2=LOC(object='trash can')
+BOX3=LOWER(targets=BOX0, anchors=BOX1)
+TARGET=LEFT(targets=BOX3, anchors=BOX2)
+
+[23] Program:
+BOX0=LOC(object='table')
+BOX1=LOC(object='seats')
+BOX2=LOC(object='square red stool')
+BOX3=LEFT(targets=BOX0, anchors=BOX2)
+
+[24] Program:
+BOX0=LOC(object='bottle')
+BOX1=LOC(object='shower')
+BOX2=LOWER(targets=BOX0, anchors=BOX1)
+TARGET=CLOSEST(targets=BOX2, anchors=BOX1)
+
+[25] Program:
+BOX0=LOC(object='white cup')
+BOX1=LOC(object='counter')
+BOX2=LOC(object='refrigerator')
+TARGET=CLOSEST(targets=BOX0, anchors=BOX2)
+
+[26] Program:
+BOX0=LOC(object='file cabinet')
+BOX1=LOC(object='desk')
+BOX2=LOC(object='cubicle')
+BOX3=LOWER(targets=BOX0, anchors=BOX2)
+TARGET=CLOSEST(targets=BOX0, anchors=BOX3)
+
+[27] Program:
+BOX0=LOC(object='box')
+TARGET=FARTHEST(targets=BOX0, anchors=CENTER)
+
+[28] Program:
+BOX0=LOC(object='whiteboard')
+BOX1=LOC(object='chairs')
+BOX2=LOC(object='desk')
+TARGET=FRONT(targets=BOX0, anchors=[BOX1, BOX2])
+
+[29] Program:
+BOX0=LOC(object='bottle')
+BOX1=LOC(object='toilet')
+TARGET=BEHIND(targets=BOX0, anchors=BOX1)
+
+[30] Program:
+BOX0=LOC(object='shelf')
+BOX1=LOC(object='bright yellow thing')
+TARGET=FARTHEST(targets=BOX0, anchors=BOX1)
+
+[31] Program:
+BOX0=LOC(object='couch')
+BOX1=LOC(object='round coffee table')
+TARGET=FARTHEST(targets=BOX0, anchors=BOX1)
+
+
+```
+
+Here are some tips:
+# Use the provided functions to implement the logic for each description
+# DO NOT create new functions, variables, or constants, or modify the provided functions, variables, or constants, find the nearest function if not exact match
+# Replace `Description` with the actual description you want to parse and generate the target object for
+# Adjust the program according to the specific requirements of each description
+# Wall should not be considered as an object
