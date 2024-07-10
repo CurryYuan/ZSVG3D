@@ -45,6 +45,15 @@ the distance between the keyboard and the door (outlined in blue).
 
 ## Instructions
 
+### Environment
+The code is tested on Ubuntu 18.04 with following package, but should also work with other versions.
+```bash
+python==3.9.12
+pytorch==1.11.0
+pytorch3d==0.7.2
+langchain==0.2.1
+```
+
 ### Visual Programming Generation
 Run the following command. You need to modify the OpenAI key first.
 ```python
