@@ -54,23 +54,35 @@ pytorch3d==0.7.2
 langchain==0.2.1
 ```
 
-### Visual Programming Generation
-Run the following command. You need to modify the OpenAI key first.
-```python
-python gen_visprog.py
-```
-
 ### Zero-shot evaluation
-Download our preproceed 3D features from [here](https://cuhko365-my.sharepoint.com/:u:/g/personal/221019046_link_cuhk_edu_cn/ERMP88uTVCNLhzofKub7MsMBvaRAFXVr5abbQUjRYyYDiA?e=x6aKC9) and place them under `data/scannet` folder.
+
+#### Evaluation on Nr3d
+Download our preprocessed 3D features from [here](https://cuhko365-my.sharepoint.com/:u:/g/personal/221019046_link_cuhk_edu_cn/ERMP88uTVCNLhzofKub7MsMBvaRAFXVr5abbQUjRYyYDiA?e=x6aKC9) and place them under `data/scannet` folder.
 
 Run the following command:
 ```python
-python visprog_nr3d.py
+python visprog_nr3d.py --prog_path data/nr3d_val.json
 ```
 
-Uncomment this line to use the BLIP2 models for LOC module. You can download our preprocessed images from [here](https://cuhko365-my.sharepoint.com/:u:/g/personal/221019046_link_cuhk_edu_cn/Ed4HCYSQh5xDgmaCM4PatOsBWHpri34gHXePO2VwUKJWfw?e=XTYz8Z) and change the [image_path](https://github.com/CurryYuan/ZSVG3D/blob/11c67346215bbda1c01a136bb75403667eac13e2/zsvg/loc_interpreters.py#L114) to your downloaded path.
+#### Evaluation on ScanRefer
+Dowanload our preprocessed Mask3D predictions from [here](https://cuhko365-my.sharepoint.com/:u:/g/personal/221019046_link_cuhk_edu_cn/ERDVbaA5eChGv85DXEF39fMBvJW8zClrZVxNsuGWtMTNAg?e=nSjkME).
 
 
+Run the following command:
+```python
+python visprog_scanrefer.py --prog_path data/scanrefer_val.json
+```
+
+#### Using BLIP2 for LOC module
+By default, it only use 3D only LOC module. Change the `loc` argument of ProgramInterpreter to `LOC_BLIP` in `visprog_nr3d.py` and `LOC_BLIP_pred` in `visprog_scanrefer.py` to use the BLIP2 models for LOC module.
+
+You need to download our preprocessed croped images from [GT instance](https://cuhko365-my.sharepoint.com/:u:/g/personal/221019046_link_cuhk_edu_cn/Ed4HCYSQh5xDgmaCM4PatOsBWHpri34gHXePO2VwUKJWfw?e=M7vXJz) and [Mask3D prediction](https://cuhko365-my.sharepoint.com/:u:/g/personal/221019046_link_cuhk_edu_cn/EcSxmNrwwRVGsy3BhSNx5jgBjmpxPETNiKhCJCO5J_QCWw?e=C1Laoo) and change the [image_path](https://github.com/CurryYuan/ZSVG3D/blob/11c67346215bbda1c01a136bb75403667eac13e2/zsvg/loc_interpreters.py#L114) to your downloaded path.
+
+### Visual Programming Generation
+We provide the script for visual program generation. You need to modify the OpenAI key first.
+```python
+python gen_visprog.py
+```
 
 ### Data Preparation
 

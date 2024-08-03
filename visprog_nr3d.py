@@ -14,7 +14,6 @@ from zsvg.program import ProgramInterpreter
 from zsvg.util import calc_iou, create_logger
 from zsvg.loc_interpreters import load_pc
 
-
 if __name__ == '__main__':
     # add an argument
     parser = argparse.ArgumentParser(description='visprog nr3d.')
@@ -82,12 +81,12 @@ if __name__ == '__main__':
 
     logger.info('Easy {} {} / {}'.format(correct_easy / easy_total, correct_easy, easy_total))
     logger.info('Hard {} {} / {}'.format((correct_25 - correct_easy) / (len(programs) - easy_total),
-                                            correct_25 - correct_easy,
-                                            len(programs) - easy_total))
+                                         correct_25 - correct_easy,
+                                         len(programs) - easy_total))
     logger.info('View-Dep {} {} / {}'.format(correct_dep / dep_total, correct_dep, dep_total))
     logger.info('View-Indep {} {} / {}'.format((correct_25 - correct_dep) / (len(programs) - dep_total),
-                                                correct_25 - correct_dep,
-                                                len(programs) - dep_total))
+                                               correct_25 - correct_dep,
+                                               len(programs) - dep_total))
     logger.info('Acc@25 {} {} / {}'.format(correct_25 / len(programs), correct_25, len(programs)))
     # print('Acc@50', correct_50 / len(programs), correct_50, '/', len(programs))
     logger.info('Recall {} {} / {}'.format(recall / len(programs), recall, len(programs)))

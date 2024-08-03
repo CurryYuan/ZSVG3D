@@ -237,7 +237,7 @@
         "scan_id": "scene0356_00",
         "target_id": 8,
         "caption": "there is a rectangular window . it is next to the bed .",
-        "program": "BOX0=LOC(object='rectangular window')\nBOX1=LOC(object='bed')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='rectangular window')\nBOX1=LOC(object='bed')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0427_00",
@@ -351,7 +351,7 @@
         "scan_id": "scene0169_00",
         "target_id": 40,
         "caption": "the chair is color black . the chair is close to the table .",
-        "program": "BOX0=LOC(object='black chair')\nBOX1=LOC(object='table')\nTARGET=CLOSE(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='black chair')\nBOX1=LOC(object='table')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0568_00",
@@ -1209,7 +1209,7 @@
         "scan_id": "scene0695_00",
         "target_id": 5,
         "caption": "the large hanging curtain . the curtain is next to the little shelf .",
-        "program": "BOX0=LOC(object='large hanging curtain')\nBOX1=LOC(object='little shelf')\nTARGET=NEXT(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='large hanging curtain')\nBOX1=LOC(object='little shelf')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0131_00",
@@ -1221,7 +1221,7 @@
         "scan_id": "scene0153_00",
         "target_id": 13,
         "caption": "a rolled toilet paper . it is beside the toilet bowl .",
-        "program": "BOX0=LOC(object='rolled toilet paper')\nBOX1=LOC(object='toilet bowl')\nTARGET=NEXT(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='rolled toilet paper')\nBOX1=LOC(object='toilet bowl')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0645_00",
@@ -1287,7 +1287,7 @@
         "scan_id": "scene0685_00",
         "target_id": 2,
         "caption": "there is a rectangular brown door . it is next to a black trash can .",
-        "program": "BOX0=LOC(object='rectangular brown door')\nBOX1=LOC(object='black trash can')\nTARGET=NEXT(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='rectangular brown door')\nBOX1=LOC(object='black trash can')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0488_00",
@@ -1311,7 +1311,7 @@
         "scan_id": "scene0518_00",
         "target_id": 9,
         "caption": "there is a rectangular beige coffee table of two joined square surfaces . it is next to a red couch .",
-        "program": "BOX0=LOC(object='rectangular beige coffee table of two joined square surfaces')\nBOX1=LOC(object='red couch')\nTARGET=NEXT(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='rectangular beige coffee table of two joined square surfaces')\nBOX1=LOC(object='red couch')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0307_00",
@@ -1863,7 +1863,7 @@
         "scan_id": "scene0356_00",
         "target_id": 23,
         "caption": "the door is a brown wooden door opening into a room or closet . it opens inward and is in the middle of a wall .",
-        "program": "BOX0=LOC(object='brown wooden door opening into a room or closet')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='brown wooden door opening into a room or closet')"
     },
     {
         "scan_id": "scene0658_00",
@@ -1983,7 +1983,7 @@
         "scan_id": "scene0608_00",
         "target_id": 43,
         "caption": "this tv is in the center . it is turned off .",
-        "program": "BOX0=LOC(object='tv')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='tv')"
     },
     {
         "scan_id": "scene0644_00",
@@ -2499,7 +2499,7 @@
         "scan_id": "scene0153_00",
         "target_id": 1,
         "caption": "the round sink . the sink is next to the toilet .",
-        "program": "BOX0=LOC(object='round sink')\nBOX1=LOC(object='toilet')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='round sink')\nBOX1=LOC(object='toilet')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0644_00",
@@ -3027,7 +3027,7 @@
         "scan_id": "scene0187_00",
         "target_id": 6,
         "caption": "the table is color white . the table is in the middle of the room .",
-        "program": "BOX0=LOC(object='white table')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='white table')"
     },
     {
         "scan_id": "scene0307_00",
@@ -3069,7 +3069,7 @@
         "scan_id": "scene0549_00",
         "target_id": 4,
         "caption": "this table is straight ahead . it is brown and round .",
-        "program": "BOX0=LOC(object='brown round table')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='brown round table')"
     },
     {
         "scan_id": "scene0607_00",
@@ -3105,7 +3105,7 @@
         "scan_id": "scene0169_00",
         "target_id": 10,
         "caption": "a rectangular wooden office table . it is surrounded with black office chairs .",
-        "program": "BOX0=LOC(object='rectangular wooden office table')\nBOX1=LOC(object='black office chairs')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='rectangular wooden office table')\nBOX1=LOC(object='black office chairs')"
     },
     {
         "scan_id": "scene0251_00",
@@ -3471,7 +3471,7 @@
         "scan_id": "scene0412_00",
         "target_id": 5,
         "caption": "there is a rectangular gray trash can . it is next to a door .",
-        "program": "BOX0=LOC(object='rectangular gray trash can')\nBOX1=LOC(object='door')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='rectangular gray trash can')\nBOX1=LOC(object='door')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0693_00",
@@ -3759,7 +3759,7 @@
         "scan_id": "scene0356_00",
         "target_id": 23,
         "caption": "the door is a brown wooden door that opens inward to another room or closet . it is in the middle of the wall .",
-        "program": "BOX0=LOC(object='brown wooden door')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='brown wooden door')"
     },
     {
         "scan_id": "scene0702_00",
@@ -3771,7 +3771,7 @@
         "scan_id": "scene0474_00",
         "target_id": 5,
         "caption": "this is a dark colored cart in the middle of the room . it has objects on it .",
-        "program": "BOX0=LOC(object='dark colored cart')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='dark colored cart')"
     },
     {
         "scan_id": "scene0329_00",
@@ -3831,7 +3831,7 @@
         "scan_id": "scene0678_00",
         "target_id": 12,
         "caption": "there are white washing machines . they are an island in the middle of the room .",
-        "program": "BOX0=LOC(object='white washing machines')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='white washing machines')"
     },
     {
         "scan_id": "scene0086_00",
@@ -3915,7 +3915,7 @@
         "scan_id": "scene0015_00",
         "target_id": 19,
         "caption": "there is an office chair . placed next to another chair .",
-        "program": "BOX0=LOC(object='office chair')\nBOX1=LOC(object='another chair')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='office chair')\nBOX1=LOC(object='another chair')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0015_00",
@@ -4419,7 +4419,7 @@
         "scan_id": "scene0550_00",
         "target_id": 11,
         "caption": "the hanging paper towel dispenser . the dispenser is next to the door .",
-        "program": "BOX0=LOC(object='hanging paper towel dispenser')\nBOX1=LOC(object='door')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='hanging paper towel dispenser')\nBOX1=LOC(object='door')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0196_00",
@@ -4827,7 +4827,7 @@
         "scan_id": "scene0704_00",
         "target_id": 0,
         "caption": "the cart is in the center of the room . the cart is dark gray and rectangular .",
-        "program": "BOX0=LOC(object='dark gray rectangular cart')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='dark gray rectangular cart')"
     },
     {
         "scan_id": "scene0558_00",
@@ -6489,7 +6489,7 @@
         "scan_id": "scene0697_00",
         "target_id": 9,
         "caption": "the bed is in the center of the room . the bed is a white rectangle .",
-        "program": "BOX0=LOC(object='white rectangle bed')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='white rectangle bed')"
     },
     {
         "scan_id": "scene0426_00",
@@ -6567,7 +6567,7 @@
         "scan_id": "scene0412_00",
         "target_id": 28,
         "caption": "this is a white table . it is in the middle .",
-        "program": "BOX0=LOC(object='white table')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='white table')"
     },
     {
         "scan_id": "scene0328_00",
@@ -6993,7 +6993,7 @@
         "scan_id": "scene0568_00",
         "target_id": 15,
         "caption": "this is a chair . it is closer to the shelf and sits against the wall .",
-        "program": "BOX0=LOC(object='chair')\nBOX1=LOC(object='shelf')\nTARGET=CLOSET(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='chair')\nBOX1=LOC(object='shelf')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0131_00",
@@ -7155,7 +7155,7 @@
         "scan_id": "scene0608_00",
         "target_id": 12,
         "caption": "there is a rectangular door . it is next to a map .",
-        "program": "BOX0=LOC(object='rectangular door')\nBOX1=LOC(object='map')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='rectangular door')\nBOX1=LOC(object='map')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0208_00",
@@ -7863,7 +7863,7 @@
         "scan_id": "scene0593_00",
         "target_id": 15,
         "caption": "a small size compact table . it is closer to the sofa .",
-        "program": "BOX0=LOC(object='small size compact table')\nBOX1=LOC(object='sofa')\nTARGET=CLOSET(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='small size compact table')\nBOX1=LOC(object='sofa')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0678_00",
@@ -7923,7 +7923,7 @@
         "scan_id": "scene0203_00",
         "target_id": 2,
         "caption": "there is a black cotton couch . placed in the middle of the room .",
-        "program": "BOX0=LOC(object='black cotton couch')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='black cotton couch')"
     },
     {
         "scan_id": "scene0591_00",
@@ -9039,7 +9039,7 @@
         "scan_id": "scene0685_00",
         "target_id": 13,
         "caption": "there is a rectangular poster printer . it is next to a table .",
-        "program": "BOX0=LOC(object='rectangular poster printer')\nBOX1=LOC(object='table')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='rectangular poster printer')\nBOX1=LOC(object='table')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0458_00",
@@ -10011,7 +10011,7 @@
         "scan_id": "scene0343_00",
         "target_id": 15,
         "caption": "this is a white table or one with a white table cloth . this table is in the middle of the room .",
-        "program": "BOX0=LOC(object='white table or one with a white table cloth')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='white table or one with a white table cloth')"
     },
     {
         "scan_id": "scene0342_00",
@@ -10059,7 +10059,7 @@
         "scan_id": "scene0064_00",
         "target_id": 7,
         "caption": "it is a brown leather armchair . placed in the middle of the room .",
-        "program": "BOX0=LOC(object='brown leather armchair')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='brown leather armchair')"
     },
     {
         "scan_id": "scene0432_00",
@@ -10221,7 +10221,7 @@
         "scan_id": "scene0621_00",
         "target_id": 2,
         "caption": "the object is a table . it is located in the middle of the floor .",
-        "program": "BOX0=LOC(object='table')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='table')"
     },
     {
         "scan_id": "scene0251_00",
@@ -10293,7 +10293,7 @@
         "scan_id": "scene0353_00",
         "target_id": 27,
         "caption": "a small throw pillow sitting in the middle of the couch . it is turned on it 's face and has the dark side facing up and the lighter side facing the couch .",
-        "program": "BOX0=LOC(object='small throw pillow')\nBOX1=LOC(object='couch')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='small throw pillow')\nBOX1=LOC(object='couch')"
     },
     {
         "scan_id": "scene0169_00",
@@ -10305,7 +10305,7 @@
         "scan_id": "scene0046_00",
         "target_id": 36,
         "caption": "this is a blue towel . it is next to the toilet and the sink . the towel is hanging on a bar .",
-        "program": "BOX0=LOC(object='blue towel')\nBOX1=LOC(object='toilet')\nBOX2=LOC(object='sink')\nBOX3=LOC(object='bar')\nTARGET=NEXT_TO(targets=BOX0, anchors=[BOX1, BOX2])\nTARGET=HANGING_ON(targets=BOX0, anchors=BOX3)"
+        "program": "BOX0=LOC(object='blue towel')\nBOX1=LOC(object='toilet')\nBOX2=LOC(object='sink')\nBOX3=LOC(object='bar')\nTARGET=CLOSEST(targets=BOX0, anchors=[BOX1, BOX2])\nTARGET=HANGING_ON(targets=BOX0, anchors=BOX3)"
     },
     {
         "scan_id": "scene0648_00",
@@ -10317,7 +10317,7 @@
         "scan_id": "scene0406_00",
         "target_id": 4,
         "caption": "this is the marble counter top next to the inlay sink . it appears to be black in color .",
-        "program": "BOX0=LOC(object='marble counter top')\nBOX1=LOC(object='inlay sink')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='marble counter top')\nBOX1=LOC(object='inlay sink')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0095_00",
@@ -10419,7 +10419,7 @@
         "scan_id": "scene0496_00",
         "target_id": 17,
         "caption": "this is a brown wooden table . it is in the middle of the room .",
-        "program": "BOX0=LOC(object='brown wooden table')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='brown wooden table')"
     },
     {
         "scan_id": "scene0697_00",
@@ -10707,7 +10707,7 @@
         "scan_id": "scene0553_00",
         "target_id": 15,
         "caption": "there is a rectangular soap dispenser . it is next to a white sink .",
-        "program": "BOX0=LOC(object='rectangular soap dispenser')\nBOX1=LOC(object='white sink')\nTARGET=NEXT(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='rectangular soap dispenser')\nBOX1=LOC(object='white sink')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0164_00",
@@ -10785,7 +10785,7 @@
         "scan_id": "scene0633_00",
         "target_id": 22,
         "caption": "it is the white curtain . the white curtain is next tot he grey curtain .",
-        "program": "BOX0=LOC(object='white curtain')\nBOX1=LOC(object='grey curtain')\nTARGET=NEXT(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='white curtain')\nBOX1=LOC(object='grey curtain')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0591_00",
@@ -11199,7 +11199,7 @@
         "scan_id": "scene0334_00",
         "target_id": 2,
         "caption": "the couch is brown and has wood separators . it is positioned in a half circle in the center of the room .",
-        "program": "BOX0=LOC(object='brown couch with wood separators')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='brown couch with wood separators')"
     },
     {
         "scan_id": "scene0203_00",
@@ -11235,13 +11235,13 @@
         "scan_id": "scene0196_00",
         "target_id": 4,
         "caption": "there is a white table in the corner . it has several chairs around it .",
-        "program": "BOX0=LOC(object='white table in the corner')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='white table in the corner')"
     },
     {
         "scan_id": "scene0685_00",
         "target_id": 13,
         "caption": "this poster printer is straight ahead . it is grey .",
-        "program": "BOX0=LOC(object='poster printer')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='poster printer')"
     },
     {
         "scan_id": "scene0046_00",
@@ -12477,7 +12477,7 @@
         "scan_id": "scene0412_00",
         "target_id": 28,
         "caption": "there is a large rectangular table . it is in the center of the room .",
-        "program": "BOX0=LOC(object='large rectangular table')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='large rectangular table')"
     },
     {
         "scan_id": "scene0378_00",
@@ -12939,7 +12939,7 @@
         "scan_id": "scene0354_00",
         "target_id": 12,
         "caption": "there is a rectangular door with white frames . it is next to a black chair .",
-        "program": "BOX0=LOC(object='rectangular door with white frames')\nBOX1=LOC(object='black chair')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='rectangular door with white frames')\nBOX1=LOC(object='black chair')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0207_00",
@@ -13359,7 +13359,7 @@
         "scan_id": "scene0050_00",
         "target_id": 4,
         "caption": "this is a chair with arms . it is next to the side of a desk .",
-        "program": "BOX0=LOC(object='chair with arms')\nBOX1=LOC(object='desk')\nTARGET=NEXT(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='chair with arms')\nBOX1=LOC(object='desk')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0462_00",
@@ -13491,7 +13491,7 @@
         "scan_id": "scene0607_00",
         "target_id": 5,
         "caption": "this is a brown table in a break room . it is wood and in the middle of the room .",
-        "program": "BOX0=LOC(object='brown table in a break room')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='brown table in a break room')"
     },
     {
         "scan_id": "scene0356_00",
@@ -13503,7 +13503,7 @@
         "scan_id": "scene0355_00",
         "target_id": 16,
         "caption": "this is a round table . it is in the middle of chairs .",
-        "program": "BOX0=LOC(object='round table')\nBOX1=LOC(object='chairs')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='round table')\nBOX1=LOC(object='chairs')"
     },
     {
         "scan_id": "scene0203_00",
@@ -13671,7 +13671,7 @@
         "scan_id": "scene0139_00",
         "target_id": 18,
         "caption": "there is a black hand dryer placed next to the soap dispenser .",
-        "program": "BOX0=LOC(object='black hand dryer')\nBOX1=LOC(object='soap dispenser')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='black hand dryer')\nBOX1=LOC(object='soap dispenser')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0527_00",
@@ -13785,19 +13785,19 @@
         "scan_id": "scene0670_00",
         "target_id": 34,
         "caption": "there is a rectangular picture . it is hanging next to a towel .",
-        "program": "BOX0=LOC(object='rectangular picture')\nBOX1=LOC(object='towel')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='rectangular picture')\nBOX1=LOC(object='towel')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0629_00",
         "target_id": 30,
         "caption": "the small square chair . the chair is next to the little table .",
-        "program": "BOX0=LOC(object='small square chair')\nBOX1=LOC(object='little table')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='small square chair')\nBOX1=LOC(object='little table')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0550_00",
         "target_id": 11,
         "caption": "this is a paper towel dispenser . it is mounted to the wall and next to a door .",
-        "program": "BOX0=LOC(object='paper towel dispenser mounted to the wall')\nBOX1=LOC(object='door')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='paper towel dispenser mounted to the wall')\nBOX1=LOC(object='door')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0389_00",
@@ -14289,7 +14289,7 @@
         "scan_id": "scene0701_00",
         "target_id": 2,
         "caption": "this is a brown round table . it is in the center of couches .",
-        "program": "BOX0=LOC(object='brown round table')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='brown round table')"
     },
     {
         "scan_id": "scene0222_00",
@@ -14379,7 +14379,7 @@
         "scan_id": "scene0086_00",
         "target_id": 8,
         "caption": "the door is beige with a dark bottom . the door is in the middle of a white wall .",
-        "program": "BOX0=LOC(object='door')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='door')"
     },
     {
         "scan_id": "scene0644_00",
@@ -14985,19 +14985,19 @@
         "scan_id": "scene0231_00",
         "target_id": 3,
         "caption": "the kitchen island is in the middle of the room . the kitchen island is a brown rectangular prism .",
-        "program": "BOX0=LOC(object='kitchen island')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='kitchen island')"
     },
     {
         "scan_id": "scene0591_00",
         "target_id": 1,
         "caption": "a black rotating chair . it is in the middle of the hall .",
-        "program": "BOX0=LOC(object='black rotating chair')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='black rotating chair')"
     },
     {
         "scan_id": "scene0699_00",
         "target_id": 8,
         "caption": "this blanket is in the middle . it is crumpled .",
-        "program": "BOX0=LOC(object='blanket')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='blanket')"
     },
     {
         "scan_id": "scene0695_00",
@@ -15009,7 +15009,7 @@
         "scan_id": "scene0648_00",
         "target_id": 20,
         "caption": "a large casement window with bluish highlights . it is the main window in the room , in the center of the wall .",
-        "program": "BOX0=LOC(object='large casement window with bluish highlights')\nBOX1=LOC(object='center of the wall')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='large casement window with bluish highlights')\nBOX1=LOC(object='center of the wall')"
     },
     {
         "scan_id": "scene0328_00",
@@ -15261,7 +15261,7 @@
         "scan_id": "scene0500_00",
         "target_id": 18,
         "caption": "the object is a large board room style table . the table is in the center of the room and is surrounded by many chairs . there is a chalkboard behind it and a door to the right .",
-        "program": "BOX0=LOC(object='large board room style table')\nBOX1=LOC(object='chairs')\nBOX2=LOC(object='chalkboard')\nBOX3=LOC(object='door')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='large board room style table')\nBOX1=LOC(object='chairs')\nBOX2=LOC(object='chalkboard')\nBOX3=LOC(object='door')"
     },
     {
         "scan_id": "scene0645_00",
@@ -15339,7 +15339,7 @@
         "scan_id": "scene0621_00",
         "target_id": 2,
         "caption": "this table is in the middle . it is square .",
-        "program": "BOX0=LOC(object='square table')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='square table')"
     },
     {
         "scan_id": "scene0231_00",
@@ -15477,7 +15477,7 @@
         "scan_id": "scene0221_00",
         "target_id": 47,
         "caption": "there is a square beige table . it is next to a large rectangular table at the side of the room .",
-        "program": "BOX0=LOC(object='square beige table')\nBOX1=LOC(object='large rectangular table')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='square beige table')\nBOX1=LOC(object='large rectangular table')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0652_00",
@@ -15825,7 +15825,7 @@
         "scan_id": "scene0338_00",
         "target_id": 1,
         "caption": "there is a rectangular dark recycling bin with wheels . it is next to a door .",
-        "program": "BOX0=LOC(object='rectangular dark recycling bin with wheels')\nBOX1=LOC(object='door')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='rectangular dark recycling bin with wheels')\nBOX1=LOC(object='door')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0580_00",
@@ -16389,7 +16389,7 @@
         "scan_id": "scene0030_00",
         "target_id": 47,
         "caption": "this is a broad brown plain table . this is placed at the center .",
-        "program": "BOX0=LOC(object='broad brown plain table')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='broad brown plain table')"
     },
     {
         "scan_id": "scene0025_00",
@@ -16473,7 +16473,7 @@
         "scan_id": "scene0169_00",
         "target_id": 21,
         "caption": "the large whiteboard . the white board is next to the large table .",
-        "program": "BOX0=LOC(object='large whiteboard')\nBOX1=LOC(object='large table')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='large whiteboard')\nBOX1=LOC(object='large table')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0164_00",
@@ -16557,7 +16557,7 @@
         "scan_id": "scene0645_00",
         "target_id": 5,
         "caption": "this is a tan or white colored door . it is next to the backpack at the entry to the house .",
-        "program": "BOX0=LOC(object='tan or white colored door')\nBOX1=LOC(object='backpack at entry to house')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='tan or white colored door')\nBOX1=LOC(object='backpack at entry to house')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0081_00",
@@ -17151,7 +17151,7 @@
         "scan_id": "scene0549_00",
         "target_id": 10,
         "caption": "there is a square blue armchair . it is next to a teal couch .",
-        "program": "BOX0=LOC(object='square blue armchair')\nBOX1=LOC(object='teal couch')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='square blue armchair')\nBOX1=LOC(object='teal couch')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0164_00",
@@ -17703,7 +17703,7 @@
         "scan_id": "scene0221_00",
         "target_id": 13,
         "caption": "this is a brown wooden door . it is located next to the bathroom vanity .",
-        "program": "BOX0=LOC(object='brown wooden door')\nBOX1=LOC(object='bathroom vanity')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='brown wooden door')\nBOX1=LOC(object='bathroom vanity')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0153_00",
@@ -17937,7 +17937,7 @@
         "scan_id": "scene0100_00",
         "target_id": 16,
         "caption": "the bathroom door . the door is next to the bathtub .",
-        "program": "BOX0=LOC(object='bathroom door')\nBOX1=LOC(object='bathtub')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='bathroom door')\nBOX1=LOC(object='bathtub')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0621_00",
@@ -19161,7 +19161,7 @@
         "scan_id": "scene0249_00",
         "target_id": 24,
         "caption": "this is a wooden table . its located in the center of the room .",
-        "program": "BOX0=LOC(object='wooden table')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='wooden table')"
     },
     {
         "scan_id": "scene0015_00",
@@ -20607,7 +20607,7 @@
         "scan_id": "scene0690_00",
         "target_id": 12,
         "caption": "this is a brown coffee table in a living room . it is wood and in the center of the room surrounded by the couch and arm chairs .",
-        "program": "BOX0=LOC(object='brown coffee table')\nBOX1=LOC(object='living room')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='brown coffee table')\nBOX1=LOC(object='living room')"
     },
     {
         "scan_id": "scene0169_00",
@@ -21105,7 +21105,7 @@
         "scan_id": "scene0063_00",
         "target_id": 4,
         "caption": "there is a beige wooden chair . placed next to the wooden table .",
-        "program": "BOX0=LOC(object='beige wooden chair')\nBOX1=LOC(object='wooden table')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='beige wooden chair')\nBOX1=LOC(object='wooden table')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0050_00",
@@ -21891,7 +21891,7 @@
         "scan_id": "scene0231_00",
         "target_id": 2,
         "caption": "there is a rectangular dark brown breakfast bar . it is at the center of the room and behind a bunch of cabinets .",
-        "program": "BOX0=LOC(object='rectangular dark brown breakfast bar')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='rectangular dark brown breakfast bar')"
     },
     {
         "scan_id": "scene0644_00",
@@ -21957,7 +21957,7 @@
         "scan_id": "scene0490_00",
         "target_id": 12,
         "caption": "there is a rectangular beige table . it is surrounded by chairs .",
-        "program": "BOX0=LOC(object='rectangular beige table')\nBOX1=LOC(object='chairs')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='rectangular beige table')\nBOX1=LOC(object='chairs')"
     },
     {
         "scan_id": "scene0644_00",
@@ -22275,7 +22275,7 @@
         "scan_id": "scene0343_00",
         "target_id": 16,
         "caption": "the main prep table in the center of the room . it is a blonde colored wood and has stainless steel shelves under it .",
-        "program": "BOX0=LOC(object='main prep table')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='main prep table')"
     },
     {
         "scan_id": "scene0599_00",
@@ -22905,7 +22905,7 @@
         "scan_id": "scene0343_00",
         "target_id": 13,
         "caption": "it is wire basket shelving attached to rails in a cream colored wall . the shelving is next to a wooden table with butcher block top and two slate shelves .",
-        "program": "BOX0=LOC(object='wire basket shelving attached to cream colored wall')\nBOX1=LOC(object='wooden table with butcher block top and two slate shelves')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='wire basket shelving attached to cream colored wall')\nBOX1=LOC(object='wooden table with butcher block top and two slate shelves')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0549_00",
@@ -22953,7 +22953,7 @@
         "scan_id": "scene0608_00",
         "target_id": 41,
         "caption": "there is a gray recliner chair . it is next to a guitar .",
-        "program": "BOX0=LOC(object='gray recliner chair')\nBOX1=LOC(object='guitar')\nTARGET=NEXT(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='gray recliner chair')\nBOX1=LOC(object='guitar')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0500_00",
@@ -22965,7 +22965,7 @@
         "scan_id": "scene0377_00",
         "target_id": 9,
         "caption": "there is a cylindrical colorful bucket . it is on the floor next to a white bucket .",
-        "program": "BOX0=LOC(object='cylindrical colorful bucket')\nBOX1=LOC(object='white bucket')\nTARGET=NEXT(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='cylindrical colorful bucket')\nBOX1=LOC(object='white bucket')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0351_00",
@@ -22977,7 +22977,7 @@
         "scan_id": "scene0678_00",
         "target_id": 0,
         "caption": "there is a rectangular vending machine with a soda illustration . it is next to another vending machine .",
-        "program": "BOX0=LOC(object='rectangular vending machine with a soda illustration')\nBOX1=LOC(object='another vending machine')\nTARGET=NEXT(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='rectangular vending machine with a soda illustration')\nBOX1=LOC(object='another vending machine')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0609_00",
@@ -23301,7 +23301,7 @@
         "scan_id": "scene0256_00",
         "target_id": 11,
         "caption": "the clothing rack is next to the two white boxes . there are two pillows on the bottom rung .",
-        "program": "BOX0=LOC(object='clothing rack')\nBOX1=LOC(object='white boxes')\nBOX2=LOC(object='pillows')\nTARGET=NEXT(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='clothing rack')\nBOX1=LOC(object='white boxes')\nBOX2=LOC(object='pillows')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0565_00",
@@ -24243,7 +24243,7 @@
         "scan_id": "scene0314_00",
         "target_id": 6,
         "caption": "the desk is made of wood and is circular . it is in the center of the room with monitors on it .",
-        "program": "BOX0=LOC(object='wood circular desk')\nBOX1=LOC(object='monitors on desk')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='wood circular desk')\nBOX1=LOC(object='monitors on desk')"
     },
     {
         "scan_id": "scene0653_00",
@@ -24255,7 +24255,7 @@
         "scan_id": "scene0633_00",
         "target_id": 16,
         "caption": "this crib is in the middle . it is white .",
-        "program": "BOX0=LOC(object='white crib')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='white crib')"
     },
     {
         "scan_id": "scene0019_00",
@@ -25845,7 +25845,7 @@
         "scan_id": "scene0256_00",
         "target_id": 11,
         "caption": "the clothing rack is next to the two white boxes . on the bottom rung is two white pillows .",
-        "program": "BOX0=LOC(object='clothing rack')\nBOX1=LOC(object='two white boxes')\nBOX2=LOC(object='two white pillows')\nTARGET=NEXT(targets=BOX0, anchors=BOX1)\nTARGET=ON(targets=BOX2, anchors=BOX0)"
+        "program": "BOX0=LOC(object='clothing rack')\nBOX1=LOC(object='two white boxes')\nBOX2=LOC(object='two white pillows')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)\nTARGET=ON(targets=BOX2, anchors=BOX0)"
     },
     {
         "scan_id": "scene0700_00",
@@ -25857,7 +25857,7 @@
         "scan_id": "scene0645_00",
         "target_id": 16,
         "caption": "this is a computer table that sits inside a hotel room . it is next to a sofa and covered in paper .",
-        "program": "BOX0=LOC(object='computer table inside hotel room')\nBOX1=LOC(object='sofa')\nTARGET=NEXT(targets=BOX0, anchors=BOX1)\nTARGET=COVERED(targets=BOX0, anchors='paper')"
+        "program": "BOX0=LOC(object='computer table inside hotel room')\nBOX1=LOC(object='sofa')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)\nTARGET=COVERED(targets=BOX0, anchors='paper')"
     },
     {
         "scan_id": "scene0353_00",
@@ -26901,7 +26901,7 @@
         "scan_id": "scene0496_00",
         "target_id": 17,
         "caption": "it is a huge long table . it is sitting in the middle of the room .",
-        "program": "BOX0=LOC(object='huge long table')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='huge long table')"
     },
     {
         "scan_id": "scene0149_00",
@@ -26991,7 +26991,7 @@
         "scan_id": "scene0685_00",
         "target_id": 2,
         "caption": "this door is straight ahead . it is brown .",
-        "program": "BOX0=LOC(object='brown door')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='brown door')"
     },
     {
         "scan_id": "scene0608_00",
@@ -27225,7 +27225,7 @@
         "scan_id": "scene0430_00",
         "target_id": 5,
         "caption": "the black chair that is sitting up against the wall . it is the chair next to the chair with the backpack in ti .",
-        "program": "BOX0=LOC(object='black chair')\nBOX1=LOC(object='chair with backpack')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='black chair')\nBOX1=LOC(object='chair with backpack')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0328_00",
@@ -28065,7 +28065,7 @@
         "scan_id": "scene0700_00",
         "target_id": 17,
         "caption": "there is a rectangular monitor . it is next to a laptop on a desk .",
-        "program": "BOX0=LOC(object='rectangular monitor')\nBOX1=LOC(object='laptop on desk')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='rectangular monitor')\nBOX1=LOC(object='laptop on desk')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0696_00",
@@ -28389,13 +28389,13 @@
         "scan_id": "scene0081_00",
         "target_id": 2,
         "caption": "this is a red ottoman . it is next to a round table .",
-        "program": "BOX0=LOC(object='red ottoman')\nBOX1=LOC(object='round table')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='red ottoman')\nBOX1=LOC(object='round table')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0550_00",
         "target_id": 7,
         "caption": "the over flowing trash can . the trash can is next to the radiator .",
-        "program": "BOX0=LOC(object='over flowing trash can')\nBOX1=LOC(object='radiator')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='over flowing trash can')\nBOX1=LOC(object='radiator')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0689_00",
@@ -28497,7 +28497,7 @@
         "scan_id": "scene0648_00",
         "target_id": 15,
         "caption": "this bed is in the center . it is brown and ridged .",
-        "program": "BOX0=LOC(object='bed')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='bed')"
     },
     {
         "scan_id": "scene0559_00",
@@ -28527,7 +28527,7 @@
         "scan_id": "scene0500_00",
         "target_id": 18,
         "caption": "a long table sits in the center of the room . it 's got many wooden chairs pulled under it .",
-        "program": "BOX0=LOC(object='long table')\nBOX1=LOC(object='wooden chairs')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='long table')\nBOX1=LOC(object='wooden chairs')"
     },
     {
         "scan_id": "scene0019_00",
@@ -28701,7 +28701,7 @@
         "scan_id": "scene0606_00",
         "target_id": 16,
         "caption": "there is a rectangular counter . it is next to a blue bin .",
-        "program": "BOX0=LOC(object='rectangular counter')\nBOX1=LOC(object='blue bin')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='rectangular counter')\nBOX1=LOC(object='blue bin')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0423_00",
@@ -28749,7 +28749,7 @@
         "scan_id": "scene0608_00",
         "target_id": 17,
         "caption": "there is a rectangular window . it is next to a blue and green flag .",
-        "program": "BOX0=LOC(object='rectangular window')\nBOX1=LOC(object='blue and green flag')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='rectangular window')\nBOX1=LOC(object='blue and green flag')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0423_00",
@@ -28983,7 +28983,7 @@
         "scan_id": "scene0304_00",
         "target_id": 9,
         "caption": "the cabinet is in the middle of the room . the cabinet is a white box with a blue rectangular top .",
-        "program": "BOX0=LOC(object='white box cabinet with blue rectangular top')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='white box cabinet with blue rectangular top')"
     },
     {
         "scan_id": "scene0580_00",
@@ -28995,13 +28995,13 @@
         "scan_id": "scene0196_00",
         "target_id": 1,
         "caption": "the table is color white . the table is in the center of the room .",
-        "program": "BOX0=LOC(object='white table')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='white table')"
     },
     {
         "scan_id": "scene0598_00",
         "target_id": 1,
         "caption": "these are wooden blinds . they are horizontally hanging .",
-        "program": "BOX0=LOC(object='wooden blinds')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='wooden blinds')"
     },
     {
         "scan_id": "scene0378_00",
@@ -30345,7 +30345,7 @@
         "scan_id": "scene0685_00",
         "target_id": 2,
         "caption": "this door is in the middle . it is brown .",
-        "program": "BOX0=LOC(object='door')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='door')"
     },
     {
         "scan_id": "scene0671_00",
@@ -31083,7 +31083,7 @@
         "scan_id": "scene0696_00",
         "target_id": 17,
         "caption": "item is a large green and white rectangular table . it is located centrally in the room .",
-        "program": "BOX0=LOC(object='large green and white rectangular table')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='large green and white rectangular table')"
     },
     {
         "scan_id": "scene0131_00",
@@ -31239,7 +31239,7 @@
         "scan_id": "scene0246_00",
         "target_id": 13,
         "caption": "it is a bed with bedding on it and a blue pillow on top . the bed is in the center of the room .",
-        "program": "BOX0=LOC(object='bed with bedding and blue pillow')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='bed with bedding and blue pillow')"
     },
     {
         "scan_id": "scene0693_00",
@@ -31389,7 +31389,7 @@
         "scan_id": "scene0591_00",
         "target_id": 30,
         "caption": "there is a rectangular white cabinet . it is next to a couch .",
-        "program": "BOX0=LOC(object='rectangular white cabinet')\nBOX1=LOC(object='couch')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='rectangular white cabinet')\nBOX1=LOC(object='couch')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0598_00",
@@ -31797,7 +31797,7 @@
         "scan_id": "scene0046_00",
         "target_id": 2,
         "caption": "this is a white bathtub . it is next to the sink .",
-        "program": "BOX0=LOC(object='white bathtub')\nBOX1=LOC(object='sink')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='white bathtub')\nBOX1=LOC(object='sink')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0616_00",
@@ -31893,7 +31893,7 @@
         "scan_id": "scene0357_00",
         "target_id": 5,
         "caption": "there is a rectangular door . it is next to a flight of stairs .",
-        "program": "BOX0=LOC(object='rectangular door')\nBOX1=LOC(object='flight of stairs')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='rectangular door')\nBOX1=LOC(object='flight of stairs')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0591_00",
@@ -32271,7 +32271,7 @@
         "scan_id": "scene0334_00",
         "target_id": 7,
         "caption": "there is a brown wooden bench . placed in the middle of the room .",
-        "program": "BOX0=LOC(object='brown wooden bench')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='brown wooden bench')"
     },
     {
         "scan_id": "scene0653_00",
@@ -32313,19 +32313,19 @@
         "scan_id": "scene0430_00",
         "target_id": 20,
         "caption": "this is a wooden table . it is surrounding an inner space .",
-        "program": "BOX0=LOC(object='wooden table surrounding inner space')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='wooden table surrounding inner space')"
     },
     {
         "scan_id": "scene0607_00",
         "target_id": 5,
         "caption": "this table is in the middle . it is brown and rectangular .",
-        "program": "BOX0=LOC(object='brown rectangular table')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='brown rectangular table')"
     },
     {
         "scan_id": "scene0653_00",
         "target_id": 36,
         "caption": "this chair is in the middle . it is facing inwards .",
-        "program": "BOX0=LOC(object='chair facing inwards')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='chair facing inwards')"
     },
     {
         "scan_id": "scene0086_00",
@@ -32373,7 +32373,7 @@
         "scan_id": "scene0575_00",
         "target_id": 14,
         "caption": "a long table sits in the center of the room . it 's got two tv 's hanging on the wall closest to the far side of the table .",
-        "program": "BOX0=LOC(object='long table in center of room')\nBOX1=LOC(object='tv hanging on wall')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='long table in center of room')\nBOX1=LOC(object='tv hanging on wall')"
     },
     {
         "scan_id": "scene0684_00",
@@ -32439,7 +32439,7 @@
         "scan_id": "scene0690_00",
         "target_id": 9,
         "caption": "this cabinet is straight ahead . it is brown .",
-        "program": "BOX0=LOC(object='brown cabinet')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='brown cabinet')"
     },
     {
         "scan_id": "scene0702_00",
@@ -33705,7 +33705,7 @@
         "scan_id": "scene0500_00",
         "target_id": 18,
         "caption": "this brown table is a flat surface . it is in the middle .",
-        "program": "BOX0=LOC(object='brown table')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='brown table')"
     },
     {
         "scan_id": "scene0377_00",
@@ -35805,13 +35805,13 @@
         "scan_id": "scene0685_00",
         "target_id": 13,
         "caption": "this is a large free standing printer . it is in the back of the room with walls on all sides of it . it is dark colored .",
-        "program": "BOX0=LOC(object='large free standing printer')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='large free standing printer')"
     },
     {
         "scan_id": "scene0354_00",
         "target_id": 13,
         "caption": "the object is a table with a white top . it is located in the center of the room .",
-        "program": "BOX0=LOC(object='table with white top')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='table with white top')"
     },
     {
         "scan_id": "scene0558_00",
@@ -36027,7 +36027,7 @@
         "scan_id": "scene0655_00",
         "target_id": 16,
         "caption": "the table is in the center of the room . the table is a white rectangle .",
-        "program": "BOX0=LOC(object='table')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='table')"
     },
     {
         "scan_id": "scene0164_00",
@@ -36183,7 +36183,7 @@
         "scan_id": "scene0678_00",
         "target_id": 13,
         "caption": "there is a rectangular row of clothes dryers . they are next to a soda machine .",
-        "program": "BOX0=LOC(object='rectangular row of clothes dryers')\nBOX1=LOC(object='soda machine')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='rectangular row of clothes dryers')\nBOX1=LOC(object='soda machine')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0328_00",
@@ -36339,7 +36339,7 @@
         "scan_id": "scene0704_00",
         "target_id": 1,
         "caption": "the cart is in the center of the room . the cart is a gray rectangle .",
-        "program": "BOX0=LOC(object='cart')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='cart')"
     },
     {
         "scan_id": "scene0030_00",
@@ -37497,7 +37497,7 @@
         "scan_id": "scene0665_00",
         "target_id": 17,
         "caption": "this table is in the middle . it is circular .",
-        "program": "BOX0=LOC(object='circular table')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='circular table')"
     },
     {
         "scan_id": "scene0030_00",
@@ -37581,7 +37581,7 @@
         "scan_id": "scene0704_00",
         "target_id": 1,
         "caption": "the cart is in the middle of the room . the cart is a gray rectangular shape .",
-        "program": "BOX0=LOC(object='cart')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='cart')"
     },
     {
         "scan_id": "scene0389_00",
@@ -37593,7 +37593,7 @@
         "scan_id": "scene0354_00",
         "target_id": 15,
         "caption": "there is a cylindrical trash can . it is on the floor against the wall .",
-        "program": "BOX0=LOC(object='cylindrical trash can')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='cylindrical trash can')"
     },
     {
         "scan_id": "scene0644_00",
@@ -37653,7 +37653,7 @@
         "scan_id": "scene0678_00",
         "target_id": 4,
         "caption": "this laundry basket is on the counter top . it is white .",
-        "program": "BOX0=LOC(object='laundry basket')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='laundry basket')"
     },
     {
         "scan_id": "scene0222_00",
@@ -38241,7 +38241,7 @@
         "scan_id": "scene0699_00",
         "target_id": 0,
         "caption": "this nightstand is straight ahead . it is brown .",
-        "program": "BOX0=LOC(object='nightstand')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='nightstand')"
     },
     {
         "scan_id": "scene0621_00",
@@ -38697,7 +38697,7 @@
         "scan_id": "scene0686_00",
         "target_id": 25,
         "caption": "this is a silver trash bin by the tiled wall . it is in the middle of the room .",
-        "program": "BOX0=LOC(object='silver trash bin by tiled wall')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='silver trash bin by tiled wall')"
     },
     {
         "scan_id": "scene0088_00",
@@ -39861,7 +39861,7 @@
         "scan_id": "scene0621_00",
         "target_id": 30,
         "caption": "the chair is the center northern one in the room . the chair is a black square .",
-        "program": "BOX0=LOC(object='black square chair')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='black square chair')"
     },
     {
         "scan_id": "scene0644_00",
@@ -39945,7 +39945,7 @@
         "scan_id": "scene0249_00",
         "target_id": 13,
         "caption": "this is a chair . its blue in color and is in the center of the room 5th from each corner .",
-        "program": "BOX0=LOC(object='blue chair')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='blue chair')"
     },
     {
         "scan_id": "scene0354_00",
@@ -40755,7 +40755,7 @@
         "scan_id": "scene0550_00",
         "target_id": 5,
         "caption": "the toilet is in its own room . the toilet is next to the door .",
-        "program": "BOX0=LOC(object='toilet')\nBOX1=LOC(object='door')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='toilet')\nBOX1=LOC(object='door')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0655_00",
@@ -41511,7 +41511,7 @@
         "scan_id": "scene0427_00",
         "target_id": 9,
         "caption": "this is a round table top in the meeting room . there are two office chairs around it .",
-        "program": "BOX0=LOC(object='round table top in the meeting room')\nBOX1=LOC(object='office chairs around it')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='round table top in the meeting room')\nBOX1=LOC(object='office chairs around it')"
     },
     {
         "scan_id": "scene0353_00",
@@ -43449,7 +43449,7 @@
         "scan_id": "scene0249_00",
         "target_id": 24,
         "caption": "this is a long table . it is in the center of the room .",
-        "program": "BOX0=LOC(object='long table')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='long table')"
     },
     {
         "scan_id": "scene0084_00",
@@ -44397,7 +44397,7 @@
         "scan_id": "scene0164_00",
         "target_id": 19,
         "caption": "the dishwasher is next to the stove . the dishwater is a white cube .",
-        "program": "BOX0=LOC(object='dishwasher')\nBOX1=LOC(object='stove')\nTARGET=NEXT(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='dishwasher')\nBOX1=LOC(object='stove')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0193_00",
@@ -44445,7 +44445,7 @@
         "scan_id": "scene0645_00",
         "target_id": 29,
         "caption": "this is a bin that ats as a waste paper basket . it is next to a computer table .",
-        "program": "BOX0=LOC(object='bin')\nBOX1=LOC(object='computer table')\nTARGET=NEXT(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='bin')\nBOX1=LOC(object='computer table')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0518_00",
@@ -45549,7 +45549,7 @@
         "scan_id": "scene0704_00",
         "target_id": 18,
         "caption": "this black trash can is in the center . it is empty or filled .",
-        "program": "BOX0=LOC(object='black trash can')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='black trash can')"
     },
     {
         "scan_id": "scene0231_00",
@@ -46713,13 +46713,13 @@
         "scan_id": "scene0700_00",
         "target_id": 0,
         "caption": "there is a gray office chair . it is next to a white desk .",
-        "program": "BOX0=LOC(object='gray office chair')\nBOX1=LOC(object='white desk')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='gray office chair')\nBOX1=LOC(object='white desk')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0355_00",
         "target_id": 5,
         "caption": "there is a rectangular multicolored chair . it is at a table next to a plant .",
-        "program": "BOX0=LOC(object='rectangular multicolored chair')\nBOX1=LOC(object='table')\nBOX2=LOC(object='plant')\nTARGET=NEXT_TO(targets=BOX0, anchors=[BOX1, BOX2])"
+        "program": "BOX0=LOC(object='rectangular multicolored chair')\nBOX1=LOC(object='table')\nBOX2=LOC(object='plant')\nTARGET=CLOSEST(targets=BOX0, anchors=[BOX1, BOX2])"
     },
     {
         "scan_id": "scene0030_00",
@@ -46731,7 +46731,7 @@
         "scan_id": "scene0081_00",
         "target_id": 0,
         "caption": "the very long couch . the couch is next to the tables .",
-        "program": "BOX0=LOC(object='very long couch')\nBOX1=LOC(object='tables')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='very long couch')\nBOX1=LOC(object='tables')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0644_00",
@@ -46815,7 +46815,7 @@
         "scan_id": "scene0591_00",
         "target_id": 12,
         "caption": "open is an open - front set of white bookshelves , with smaller blacks squares in a decorative motif on all planes . bookcase is 3 shelves tall , centered on and facing open from the wall directly opposite this viewpoint .",
-        "program": "BOX0=LOC(object='open-front set of white bookshelves with smaller black squares')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='open-front set of white bookshelves with smaller black squares')"
     },
     {
         "scan_id": "scene0207_00",
@@ -46869,7 +46869,7 @@
         "scan_id": "scene0598_00",
         "target_id": 4,
         "caption": "this is a bookshelf that lies against the wall in front of the conference table . it has white shelves and wooden beams holding the shelves .",
-        "program": "BOX0=LOC(object='bookshelf against wall in front of conference table with white shelves and wooden beams')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='bookshelf against wall in front of conference table with white shelves and wooden beams')"
     },
     {
         "scan_id": "scene0462_00",
@@ -46881,7 +46881,7 @@
         "scan_id": "scene0231_00",
         "target_id": 3,
         "caption": "in the center of the kitchen is an island . it is brown and wide and has a few glass items on it .",
-        "program": "BOX0=LOC(object='brown island with glass items on it')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='brown island with glass items on it')"
     },
     {
         "scan_id": "scene0208_00",
@@ -47031,7 +47031,7 @@
         "scan_id": "scene0618_00",
         "target_id": 17,
         "caption": "the pool table is in the center of the room . the top is green and the legs and the border around the top are wood .",
-        "program": "BOX0=LOC(object='pool table with green top and wood legs and border')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='pool table with green top and wood legs and border')"
     },
     {
         "scan_id": "scene0046_00",
@@ -47049,7 +47049,7 @@
         "scan_id": "scene0249_00",
         "target_id": 24,
         "caption": "this is a wooden table . its in the center of the room surrounded by chairs .",
-        "program": "BOX0=LOC(object='wooden table')\nBOX1=LOC(object='chairs')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='wooden table')\nBOX1=LOC(object='chairs')"
     },
     {
         "scan_id": "scene0100_00",
@@ -47091,7 +47091,7 @@
         "scan_id": "scene0221_00",
         "target_id": 43,
         "caption": "the object is a nightstand that has a lamp resting upon it . the nightstand is centered between the beds , and can be seen from the entry door .",
-        "program": "BOX0=LOC(object='nightstand with lamp')\nBOX1=LOC(object='beds')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='nightstand with lamp')\nBOX1=LOC(object='beds')"
     },
     {
         "scan_id": "scene0222_00",
@@ -47133,13 +47133,13 @@
         "scan_id": "scene0378_00",
         "target_id": 2,
         "caption": "this is a tan door in the corner . it is closed and has a jacket hanging from it .",
-        "program": "BOX0=LOC(object='tan door')\nBOX1=LOC(object='jacket')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='tan door')\nBOX1=LOC(object='jacket')"
     },
     {
         "scan_id": "scene0696_00",
         "target_id": 17,
         "caption": "this table is green . this is a top view .",
-        "program": "BOX0=LOC(object='green table')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='green table')"
     },
     {
         "scan_id": "scene0251_00",
@@ -47985,7 +47985,7 @@
         "scan_id": "scene0131_00",
         "target_id": 43,
         "caption": "there is a whiteboard in an office on the floor . it is next to the chair with no back in the corner .",
-        "program": "BOX0=LOC(object='whiteboard')\nBOX1=LOC(object='chair with no back in the corner')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='whiteboard')\nBOX1=LOC(object='chair with no back in the corner')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0025_00",
@@ -48861,7 +48861,7 @@
         "scan_id": "scene0608_00",
         "target_id": 6,
         "caption": "this is a brown coffee table . it is next to the guitar .",
-        "program": "BOX0=LOC(object='brown coffee table')\nBOX1=LOC(object='guitar')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='brown coffee table')\nBOX1=LOC(object='guitar')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0598_00",
@@ -48909,7 +48909,7 @@
         "scan_id": "scene0222_00",
         "target_id": 7,
         "caption": "the chair is right next to the desk . the chair has four legs and a brown color .",
-        "program": "BOX0=LOC(object='chair')\nBOX1=LOC(object='desk')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='chair')\nBOX1=LOC(object='desk')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0655_00",
@@ -48999,7 +48999,7 @@
         "scan_id": "scene0025_00",
         "target_id": 15,
         "caption": "this is a white small cabinet . it is next to a black couch against the wall .",
-        "program": "BOX0=LOC(object='white small cabinet')\nBOX1=LOC(object='black couch against the wall')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='white small cabinet')\nBOX1=LOC(object='black couch against the wall')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0430_00",
@@ -49107,7 +49107,7 @@
         "scan_id": "scene0153_00",
         "target_id": 13,
         "caption": "the toilet paper roll . the roll is next to the toilet .",
-        "program": "BOX0=LOC(object='toilet paper roll')\nBOX1=LOC(object='toilet')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='toilet paper roll')\nBOX1=LOC(object='toilet')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0678_00",
@@ -49653,7 +49653,7 @@
         "scan_id": "scene0591_00",
         "target_id": 31,
         "caption": "there is a rectangular teal cabinet . it is next to a white shelf .",
-        "program": "BOX0=LOC(object='rectangular teal cabinet')\nBOX1=LOC(object='white shelf')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='rectangular teal cabinet')\nBOX1=LOC(object='white shelf')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0149_00",
@@ -49827,7 +49827,7 @@
         "scan_id": "scene0685_00",
         "target_id": 0,
         "caption": "there is a rectangular green trash can . it is next to a wooden door .",
-        "program": "BOX0=LOC(object='rectangular green trash can')\nBOX1=LOC(object='wooden door')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='rectangular green trash can')\nBOX1=LOC(object='wooden door')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0488_00",
@@ -51051,7 +51051,7 @@
         "scan_id": "scene0389_00",
         "target_id": 25,
         "caption": "there is a rectangular curtain . it is next to the door .",
-        "program": "BOX0=LOC(object='rectangular curtain')\nBOX1=LOC(object='door')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='rectangular curtain')\nBOX1=LOC(object='door')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0458_00",
@@ -51075,13 +51075,13 @@
         "scan_id": "scene0025_00",
         "target_id": 11,
         "caption": "in the front corner away from the office desk is a tall shelf , or storage cabinet . directly beside the shelf , is a door .",
-        "program": "BOX0=LOC(object='tall shelf')\nBOX1=LOC(object='door')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='tall shelf')\nBOX1=LOC(object='door')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0704_00",
         "target_id": 1,
         "caption": "there is a rectangular metal cart . it is next to a cardboard box .",
-        "program": "BOX0=LOC(object='rectangular metal cart')\nBOX1=LOC(object='cardboard box')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='rectangular metal cart')\nBOX1=LOC(object='cardboard box')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0221_00",
@@ -51093,7 +51093,7 @@
         "scan_id": "scene0063_00",
         "target_id": 14,
         "caption": "a silver color refrigerator located in the kitchen . it is placed beside the door .",
-        "program": "BOX0=LOC(object='silver color refrigerator')\nBOX1=LOC(object='door')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='silver color refrigerator')\nBOX1=LOC(object='door')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0196_00",
@@ -51129,7 +51129,7 @@
         "scan_id": "scene0015_00",
         "target_id": 27,
         "caption": "there is an office chair . placed next to the heating of the room .",
-        "program": "BOX0=LOC(object='office chair')\nBOX1=LOC(object='heating of the room')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='office chair')\nBOX1=LOC(object='heating of the room')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0249_00",
@@ -51189,7 +51189,7 @@
         "scan_id": "scene0231_00",
         "target_id": 64,
         "caption": "there is a brown kitchen cabinet . it is directly next to the microwave and at the side of the room .",
-        "program": "BOX0=LOC(object='brown kitchen cabinet')\nBOX1=LOC(object='microwave')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='brown kitchen cabinet')\nBOX1=LOC(object='microwave')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0203_00",
@@ -52023,7 +52023,7 @@
         "scan_id": "scene0063_00",
         "target_id": 12,
         "caption": "this is a kitchen island . it sets in the middle of the room with some stools at it .",
-        "program": "BOX0=LOC(object='kitchen island')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='kitchen island')"
     },
     {
         "scan_id": "scene0535_00",
@@ -52365,7 +52365,7 @@
         "scan_id": "scene0696_00",
         "target_id": 17,
         "caption": "this is a dark wooden table . it is located directly in the middle of the room and can not be missed .",
-        "program": "BOX0=LOC(object='dark wooden table')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='dark wooden table')"
     },
     {
         "scan_id": "scene0488_00",
@@ -52953,7 +52953,7 @@
         "scan_id": "scene0249_00",
         "target_id": 7,
         "caption": "this is a grey chair . its in the center of the room out of place .",
-        "program": "BOX0=LOC(object='grey chair')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='grey chair')"
     },
     {
         "scan_id": "scene0621_00",
@@ -54543,7 +54543,7 @@
         "scan_id": "scene0377_00",
         "target_id": 10,
         "caption": "this is a silver bin . it is in the center and is empty .",
-        "program": "BOX0=LOC(object='silver bin')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='silver bin')"
     },
     {
         "scan_id": "scene0030_00",
@@ -54585,7 +54585,7 @@
         "scan_id": "scene0578_00",
         "target_id": 9,
         "caption": "there is a rectangular window . it is the window closest to the door .",
-        "program": "BOX0=LOC(object='rectangular window closest to the door')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='rectangular window closest to the door')"
     },
     {
         "scan_id": "scene0609_00",
@@ -54891,7 +54891,7 @@
         "scan_id": "scene0591_00",
         "target_id": 5,
         "caption": "there is a beige desk . it is next to a black backpack on the ground .",
-        "program": "BOX0=LOC(object='beige desk')\nBOX1=LOC(object='black backpack')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='beige desk')\nBOX1=LOC(object='black backpack')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0208_00",
@@ -54945,13 +54945,13 @@
         "scan_id": "scene0664_00",
         "target_id": 22,
         "caption": "there is a rectangular gray trash can . it is next to a toilet .",
-        "program": "BOX0=LOC(object='rectangular gray trash can')\nBOX1=LOC(object='toilet')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='rectangular gray trash can')\nBOX1=LOC(object='toilet')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0655_00",
         "target_id": 16,
         "caption": "this is a white table . it is in the center of the room .",
-        "program": "BOX0=LOC(object='white table')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='white table')"
     },
     {
         "scan_id": "scene0222_00",
@@ -55023,13 +55023,13 @@
         "scan_id": "scene0412_00",
         "target_id": 5,
         "caption": "a small black trash can . the trash can is next to a refrigerator and has a plastic bag inside of it .",
-        "program": "BOX0=LOC(object='small black trash can')\nBOX1=LOC(object='refrigerator')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='small black trash can')\nBOX1=LOC(object='refrigerator')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0050_00",
         "target_id": 10,
         "caption": "this is a brown door . it is located next to an outlet .",
-        "program": "BOX0=LOC(object='brown door')\nBOX1=LOC(object='outlet')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='brown door')\nBOX1=LOC(object='outlet')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0494_00",
@@ -56241,7 +56241,7 @@
         "scan_id": "scene0689_00",
         "target_id": 4,
         "caption": "the white square table is sitting in the middle of the room . there is a red wall to the left of it .",
-        "program": "BOX0=LOC(object='white square table')\nTARGET=CENTER"
+        "program": "BOX0=LOC(object='white square table')"
     },
     {
         "scan_id": "scene0077_00",
@@ -56865,7 +56865,7 @@
         "scan_id": "scene0231_00",
         "target_id": 31,
         "caption": "the trashcan is black with a white nylon bag in it . it is placed next to a stack of books .",
-        "program": "BOX0=LOC(object='black trashcan with white nylon bag')\nBOX1=LOC(object='stack of books')\nTARGET=NEXT_TO(targets=BOX0, anchors=BOX1)"
+        "program": "BOX0=LOC(object='black trashcan with white nylon bag')\nBOX1=LOC(object='stack of books')\nTARGET=CLOSEST(targets=BOX0, anchors=BOX1)"
     },
     {
         "scan_id": "scene0300_00",

@@ -12,7 +12,6 @@ from data.scannet200_constants import CLASS_LABELS_200, CLASS_LABELS_20
 from zsvg.registry import register_interpreter
 from zsvg.program import parse_step
 
-
 with open('data/scannet/feats_3d.pkl', 'rb') as f:
     feats = pickle.load(f)
 
@@ -28,9 +27,10 @@ def load_pc(scan_id):
 
     return obj_ids, inst_locs, center, obj_embeds
 
+
 @register_interpreter
 class LocInterpreter(nn.Module):
-    step_name = 'LOC'
+    step_name = 'LOC_3D'
 
     def __init__(self, tokenizer_name='/221019046/Data/huggingface/clip-vit-base-patch16'):
         super().__init__()
@@ -52,13 +52,8 @@ class LocInterpreter(nn.Module):
         label_lang_infos = self.clip.get_text_features(**self.class_name_tokens)
         self.label_lang_infos = label_lang_infos / label_lang_infos.norm(p=2, dim=-1, keepdim=True)
 
-
     def execute(self, prog_step, inspect=False):
         parse_result = parse_step(prog_step.prog_str)
-
-        step_name = parse_result['step_name']
-        assert (step_name == self.step_name)
-
         output_var = parse_result['output_var']
 
         obj_name = eval(parse_result['args']['object'])
@@ -111,9 +106,9 @@ class LocInterpreter(nn.Module):
         return boxes
 
 
-# @register_interpreter
+@register_interpreter
 class BLIPInterpreter(nn.Module):
-    step_name = 'LOC'
+    step_name = 'LOC_BLIP'
 
     def __init__(self, use2d=True, tokenizer_name='/221019046/Data/huggingface/clip-vit-base-patch16'):
         super().__init__()
@@ -143,13 +138,8 @@ class BLIPInterpreter(nn.Module):
 
         self.image_path = '/LiZhen_team/dataset/scannet/'
 
-
     def execute(self, prog_step, inspect=False):
         parse_result = parse_step(prog_step.prog_str)
-
-        step_name = parse_result['step_name']
-        assert (step_name == self.step_name)
-
         output_var = parse_result['output_var']
 
         obj_name = eval(parse_result['args']['object'])
@@ -191,7 +181,6 @@ class BLIPInterpreter(nn.Module):
         text_cls = torch.matmul(query_lang_infos, label_lang_infos.t())
         text_cls = text_cls.argmax(dim=-1)[0]
         text_cls = new_class_list[text_cls]
-
 
         candidate_boxes = []
 
